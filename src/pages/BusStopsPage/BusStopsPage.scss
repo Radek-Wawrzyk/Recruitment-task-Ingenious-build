@@ -1,0 +1,36 @@
+.stops-page {
+  position: relative;
+
+  &__search {
+    padding: 0.5rem;
+    max-width: 288px;
+  }
+
+  &__card {
+    position: relative;
+
+    :deep(.app-card__content) {
+      overflow: hidden;
+      overflow-y: auto;
+      max-height: calc(676px - 56px);
+    }
+  }
+}
+
+// Media
+
+@media screen and (max-width: 768px) {
+  .stops-page {
+    &__content {
+      grid-template-columns: auto;
+    }
+
+    &__card {
+      :deep(.app-card__content) {
+        overflow: auto;
+        overflow-y: auto;
+        max-height: 100%;
+      }
+    }
+  }
+}

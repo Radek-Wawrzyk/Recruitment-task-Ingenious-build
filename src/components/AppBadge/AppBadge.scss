@@ -1,0 +1,28 @@
+.app-badge {
+  position: relative;
+
+  &__button {
+    background-color: var(--primary-color);
+    border-radius: var(--border-radius);
+    color: var(--text-color--accent);
+    padding: 0.5rem 1rem;
+    border: none;
+    font-size: 0.75rem;
+    font-weight: 500;
+    line-height: 16px;
+    min-width: 54px;
+    transition: background-color var(--transition-time);
+    cursor: pointer;
+    outline-color: var(--primary-color--active);
+
+    &:hover,
+    &:focus,
+    &--is-active {
+      background-color: var(--primary-color--hover);
+    }
+
+    &--is-active {
+      background-color: var(--primary-color--active);
+    }
+  }
+}

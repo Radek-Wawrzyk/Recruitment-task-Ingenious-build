@@ -1,0 +1,27 @@
+.app-navigation {
+  position: relative;
+  height: 64px;
+  background-color: var(--background-color--accent);
+  padding: 0 1.5rem;
+  border-radius: var(--border-radius);
+
+  &__item {
+    position: relative;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0 1.5rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    border-bottom: 2px solid transparent;
+    color: var(--text-color--disabled);
+
+    &.router-link-active {
+      color: var(--text-color--medium);
+      border-bottom-color: var(--primary-color);
+    }
+  }
+}
